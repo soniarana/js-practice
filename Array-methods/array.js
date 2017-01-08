@@ -4,6 +4,9 @@ item.isEven=item.num % 2==0?true:false;
 });
 console.log("modified array ",a);
 
+//=============================== Revised Code =================================
+
+a.forEach( item => { item.isEven = item.num % 2 === 0 });
 
 /*forEach
 consider following array
