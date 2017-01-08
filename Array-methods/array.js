@@ -1,11 +1,8 @@
 var a = [{ num : 1 } , { num : 3 } , { num : 5 } , { num : 7 } , { num : 8 }];
-var newArray=[];
 a.forEach(function(item,index) {
-var newItem={num : item.num ,isEven:item.num % 2==0?true:false};
-    console.log(newItem,index);
-newArray.push(newItem);
+item.isEven=item.num % 2==0?true:false;
 });
-console.log("modified array ",newArray);
+console.log("modified array ",a);
 
 
 /*forEach

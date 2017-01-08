@@ -1,7 +1,7 @@
 var numArray = [ 1 , 3 , 4 , 7 , 8]
 
 function isNoEven(value){
-return value % 2 ==0 ? true : false;
+return value % 2 ==0;
 }
 
 var evenArray = numArray.filter(isNoEven);
