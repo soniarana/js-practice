@@ -8,6 +8,11 @@ return item;
 console.log("modified array",newArray);
 
 
+//=============================== Revised Code =================================
+
+numArray.map( item => item.num % 2 === 0 ? item : ++item });
+
+
 
 
 
