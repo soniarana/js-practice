@@ -7,6 +7,9 @@ return value % 2 ==0;
 var evenArray = numArray.filter(isNoEven);
 console.log("modified array", evenArray);
 
+//=============================== Revised Code =================================
+
+var newArray = numArray.filter( item => item.num % 2 === 0 });
 
 
 
