@@ -26,15 +26,16 @@ console.log("unique persons: ",distinctList);
 
 //=============================== Revised Code =================================
 
-var names = persons.map( person => person.name ).reduce( ( prev , curr )=>{
+var distinctNames = persons.map( person => person.name ).reduce( ( prev , curr )=>{
  //if( prev.indexOf(curr) === -1){
  //OR
  if( !prev.includes(curr)){          //we will always use includes from now on
      prev.push(curr);
  }
  return prev;
-},[])
+},[]);
 
+console.log(distinctNames);
 
 
 
