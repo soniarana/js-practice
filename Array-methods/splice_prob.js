@@ -1,12 +1,23 @@
 function adjust(arr,index,itemToAdd){
-    itemToAdd.map(item=>{
-       return arr.splice(index++,0,item);
+    itemToAdd.map(item=>{ //use foreach
+       return arr.splice(index++,0,item);   //no need of return
     })
   return arr;
 };
 
 var output=adjust([3,5,6],2,[2,9,7]);
 console.log("output",output);
+
+
+//Very good answer ... but dont use map.. use foreach instead
+//=============================== Revised Code =================================
+
+//Now with destruction we can do it like in ES6
+//read more  https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+function adjust(arr,index,itemToAdd){
+    arr.splice(index , 0 , ...itemToAdd)
+    return arr;
+};
 
 
 
