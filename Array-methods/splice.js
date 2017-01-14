@@ -11,3 +11,7 @@ dishArray.forEach((item,index)=>{
     }
 });
     console.log("veg menu",dishArray);
+
+//====================================== Advice ===============================================
+
+//Implement the above function in your life also :D
