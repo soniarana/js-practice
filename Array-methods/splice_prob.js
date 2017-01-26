@@ -1,6 +1,8 @@
+
+console.log("splice_prob");
 function adjust(arr,index,itemToAdd){
-    itemToAdd.map(item=>{ //use foreach
-       return arr.splice(index++,0,item);   //no need of return
+    itemToAdd.forEach(item=>{ //use foreach
+     arr.splice(index++,0,item.name);   //no need of return
     })
   return arr;
 };

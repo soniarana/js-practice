@@ -1,7 +1,8 @@
-require("./without_reduce")
+require("./every")
+require("./shift_unshift")
+require("./join")
+require("./some")
 require("./splice_prob")
-
-
 require("./reduce")
 require("./array")
 require("./array_map")

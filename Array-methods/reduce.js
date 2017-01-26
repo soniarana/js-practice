@@ -26,7 +26,7 @@ console.log("unique persons: ",distinctList);
 
 //=============================== Revised Code =================================
 
-var distinctNames = persons.map( person => person.name ).reduce( ( prev , curr )=>{
+/*var distinctNames = persons.map( person => person.name ).reduce( ( prev , curr )=>{
  //if( prev.indexOf(curr) === -1){
  //OR
  if( !prev.includes(curr)){          //we will always use includes from now on
@@ -36,6 +36,9 @@ var distinctNames = persons.map( person => person.name ).reduce( ( prev , curr )
 },[]);
 
 console.log(distinctNames);
+
+*/
+
 
 
 
@@ -60,6 +63,6 @@ Write a program to fetch all distinct names from person collections
 
 Do this 
 a) using reduce
-b) without using reduce
+
 
 Output should be [ "Tushar","Anil","Akshay"] */
